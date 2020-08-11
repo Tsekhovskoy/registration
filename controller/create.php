@@ -40,7 +40,7 @@ class Create
     }
 
     public function load() {
-        $sql = 'SELECT * FROM user_information';
+        $sql = 'SELECT * FROM `user_information` ORDER BY `name` ';
         $result = $this->connection->query($sql, []);
 
         if (count($result)) {
