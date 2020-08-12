@@ -1,4 +1,4 @@
-/*
+/**
  * Removing the selected address from the database and from the view without reloading the page
  */
 

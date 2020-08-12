@@ -2,7 +2,7 @@
 
 require_once('DbConnection.php');
 
-/*
+/**
  * Class for rendering data after page refresh. Creates the table if it didn't exist
  * */
 

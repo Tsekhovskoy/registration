@@ -1,4 +1,4 @@
-/*
+/**
  * Rendering actual addresses on the page when it loads
  */
 

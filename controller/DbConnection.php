@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * The database connection class
  * */
 
@@ -12,7 +12,7 @@ class Connection
     public $dbName = '';
     public $user = '';
     public $password = '';
-    public $host = 'localhost';
+    public $host = '';
 
     private function __construct()
     {

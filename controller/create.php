@@ -2,7 +2,7 @@
 
 require_once ('DbConnection.php');
 
-/*
+/**
  * The Add address class. After adding an address, it returns the current list of addresses from the database
 **/
 

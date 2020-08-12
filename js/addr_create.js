@@ -1,11 +1,15 @@
-/*
+/**
  * Adding a new address and rendering actual addresses without reloading the page
  */
 
 $( document ).ready(function() {
     $(".green_btn").click(
         function(){
-            sendAjaxForm('ajax_form', 'controller/create.php');
+            if($('#name').val() && $('#countrySel').val() && $('#citySel').val()) {
+                sendAjaxForm('ajax_form', 'controller/create.php');
+            } else {
+                swal("Required fields are empty!", "Fill in the form, please", "error");
+            }
             return false;
         }
     );

@@ -2,7 +2,7 @@
 
 require_once('DbConnection.php');
 
-/*
+/**
  * The Address deletion class. Removes an address by its ID
  * */
 
