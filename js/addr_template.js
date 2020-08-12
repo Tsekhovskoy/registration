@@ -1,3 +1,7 @@
+/*
+ * Rendering actual addresses on the page when it loads
+ */
+
 $( document ).ready(function() {
             templateAddress('controller/template.php');
             return false;

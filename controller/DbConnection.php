@@ -1,5 +1,9 @@
 <?php
 
+/*
+ * The database connection class
+ * */
+
 class Connection
 {
     private static $instance;
@@ -8,7 +12,7 @@ class Connection
     public $dbName = '';
     public $user = '';
     public $password = '';
-    public $host = '';
+    public $host = 'localhost';
 
     private function __construct()
     {

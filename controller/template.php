@@ -2,6 +2,10 @@
 
 require_once('DbConnection.php');
 
+/*
+ * Class for rendering data after page refresh. Creates the table if it didn't exist
+ * */
+
 class Template
 {
     protected $connection;
@@ -10,14 +14,6 @@ class Template
     public function __construct(Connection $connection)
     {
         $this->connection = $connection;
-    }
-
-    public function cleanData($data)
-    {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
     }
 
     public function load()

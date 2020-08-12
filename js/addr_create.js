@@ -1,3 +1,7 @@
+/*
+ * Adding a new address and rendering actual addresses without reloading the page
+ */
+
 $( document ).ready(function() {
     $(".green_btn").click(
         function(){
@@ -23,9 +27,10 @@ function sendAjaxForm(ajax_form, url) {
                     '<p>' + 'Addition information: ' + response[i].information + '</p>' + '<div class="actbox" > ' +
                     '<a class="bcross" data-id="' + response[i].id + '"></a></div></div>');
             }
+            swal("Added!", "Address created.", "success");
         },
         error: function(response) {
-            $('#template').html('Error! Data not sent.');
+            swal("Address Not Added!", "No address added. Check your internet connection or contact technical support.", "error");
         }
     });
 }

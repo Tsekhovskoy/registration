@@ -2,6 +2,10 @@
 
 require_once ('DbConnection.php');
 
+/*
+ * The Add address class. After adding an address, it returns the current list of addresses from the database
+**/
+
 class Create
 {
     public $id;
@@ -44,7 +48,7 @@ class Create
         $result = $this->connection->query($sql, []);
 
         if (count($result)) {
-            header('Content-type: application/json');
+            //header('Content-type: application/json');
             echo json_encode($result);
         }
     }

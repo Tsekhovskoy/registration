@@ -1,3 +1,7 @@
+/*
+ * Getting a list of cities and their streets
+ */
+
 async function getData() {
     let array = await fetch(
         'https://raw.githubusercontent.com/David-Haim/CountriesToCitiesJSON/master/countriesToCities.json'
