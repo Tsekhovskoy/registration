@@ -19,6 +19,9 @@ function sendAjaxForm(ajax_form, url) {
         dataType    : "json",
         success: function(response) {
             $('#template').empty();
+            $('#ajax_form')[0].reset();
+            $('#citySel').val('');
+
             for (var i = 0; i < response.length; i++) {
                 $('#template').append('<div class="item" id="'+ response[i].id + '">' + '<br> ' +
                     '<h3>' + response[i].name + '</h3>' + '<p>' + 'Country: ' + response[i].country + ', ' +

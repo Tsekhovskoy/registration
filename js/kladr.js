@@ -22,7 +22,8 @@ async function getData() {
     }
 
     countrySel.onchange = function () {
-        citySel.innerHTML = '';
+        cityBuffer  =  [];
+        $('#citySel').empty();
 
         for (let cityBuf of objData[countrySel.value]) {
             cityBuffer.push(cityBuf);
