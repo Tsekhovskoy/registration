@@ -48,7 +48,6 @@ class Create
         $result = $this->connection->query($sql, []);
 
         if (count($result)) {
-            //header('Content-type: application/json');
             echo json_encode($result);
         }
     }
